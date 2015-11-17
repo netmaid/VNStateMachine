@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VNStateMachine"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1-beta1"
   s.summary          = "An Object-based State Machine for Objective-C."
   s.description      = <<-DESC
                          The object-based state is usable for complicated state machine,
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.1'
   s.requires_arc = true
 
-  s.source_files = 'VNStateMachine/**/*.{h,m}'
+  s.source_files = 'VNStateMachine/**/*.{h,m,mm}'
   s.resource_bundles = {
     'VNStateMachine' => ['VNStateMachine/**/*.png']
   }

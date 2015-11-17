@@ -6,8 +6,7 @@
 //  Copyright © 2015 netmaid. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 
 #import <VNStateMachine/VNStateMsg.h>
 #import <VNStateMachine/VNState.h>
