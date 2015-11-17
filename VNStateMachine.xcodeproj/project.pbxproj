@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344840EB1BF8555100ADC33B /* VNStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 344840EA1BF8555100ADC33B /* VNStateMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344840F21BF8555100ADC33B /* VNStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344840E71BF8555100ADC33B /* VNStateMachine.framework */; };
+		344840F71BF8555100ADC33B /* PersonSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344840F61BF8555100ADC33B /* PersonSyncTests.m */; };
+		344841041BF8574500ADC33B /* VNStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841031BF8574500ADC33B /* VNStateMachine.m */; };
+		344841091BF859E700ADC33B /* VNStateEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841081BF859E700ADC33B /* VNStateEntity.m */; };
+		3448410D1BF85A1300ADC33B /* VNStateEntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3448410C1BF85A1300ADC33B /* VNStateEntityManager.m */; };
+		344841101BF85A3A00ADC33B /* VNStateMsgDispatcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3448410F1BF85A3A00ADC33B /* VNStateMsgDispatcher.mm */; };
+		344841141BF8650F00ADC33B /* VNStateMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841131BF8650F00ADC33B /* VNStateMsg.m */; };
+		344841251BF9B3F200ADC33B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841241BF9B3F200ADC33B /* Person.m */; };
+		3448412A1BF9BC4C00ADC33B /* Person_Sleeping.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841291BF9BC4C00ADC33B /* Person_Sleeping.m */; };
+		3448412E1BF9BC9F00ADC33B /* Person_Working.m in Sources */ = {isa = PBXBuildFile; fileRef = 3448412D1BF9BC9F00ADC33B /* Person_Working.m */; };
+		344841361BFA083300ADC33B /* Person_Eating.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841351BFA083300ADC33B /* Person_Eating.m */; };
+		344841381BFA084200ADC33B /* Person_Autonomic.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841371BFA084200ADC33B /* Person_Autonomic.m */; };
+		3448413A1BFA160D00ADC33B /* PersonAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344841301BF9DF2100ADC33B /* PersonAsyncTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344840F31BF8555100ADC33B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344840DE1BF8555100ADC33B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344840E61BF8555100ADC33B;
+			remoteInfo = VNStateMachine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344840E71BF8555100ADC33B /* VNStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VNStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		344840EA1BF8555100ADC33B /* VNStateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNStateMachine.h; sourceTree = "<group>"; };
+		344840EC1BF8555100ADC33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344840F11BF8555100ADC33B /* VNStateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VNStateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344840F61BF8555100ADC33B /* PersonSyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonSyncTests.m; sourceTree = "<group>"; };
+		344840F81BF8555100ADC33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344841021BF8572D00ADC33B /* VNStateMachine_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNStateMachine_.h; sourceTree = "<group>"; };
+		344841031BF8574500ADC33B /* VNStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNStateMachine.m; sourceTree = "<group>"; };
+		344841051BF859D100ADC33B /* VNState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNState.h; sourceTree = "<group>"; };
+		344841081BF859E700ADC33B /* VNStateEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNStateEntity.m; sourceTree = "<group>"; };
+		3448410A1BF859F000ADC33B /* VNStateEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNStateEntity.h; sourceTree = "<group>"; };
+		3448410B1BF85A0800ADC33B /* VNStateEntityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNStateEntityManager.h; sourceTree = "<group>"; };
+		3448410C1BF85A1300ADC33B /* VNStateEntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNStateEntityManager.m; sourceTree = "<group>"; };
+		3448410E1BF85A2F00ADC33B /* VNStateMsgDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNStateMsgDispatcher.h; sourceTree = "<group>"; };
+		3448410F1BF85A3A00ADC33B /* VNStateMsgDispatcher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VNStateMsgDispatcher.mm; sourceTree = "<group>"; };
+		344841121BF8603600ADC33B /* VNStateMsg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VNStateMsg.h; sourceTree = "<group>"; };
+		344841131BF8650F00ADC33B /* VNStateMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNStateMsg.m; sourceTree = "<group>"; };
+		344841241BF9B3F200ADC33B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		344841261BF9B40300ADC33B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		344841291BF9BC4C00ADC33B /* Person_Sleeping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person_Sleeping.m; sourceTree = "<group>"; };
+		3448412D1BF9BC9F00ADC33B /* Person_Working.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person_Working.m; sourceTree = "<group>"; };
+		344841301BF9DF2100ADC33B /* PersonAsyncTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAsyncTests.m; sourceTree = "<group>"; };
+		344841351BFA083300ADC33B /* Person_Eating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person_Eating.m; sourceTree = "<group>"; };
+		344841371BFA084200ADC33B /* Person_Autonomic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person_Autonomic.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344840E31BF8555100ADC33B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344840EE1BF8555100ADC33B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344840F21BF8555100ADC33B /* VNStateMachine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344840DD1BF8555100ADC33B = {
+			isa = PBXGroup;
+			children = (
+				344840E91BF8555100ADC33B /* VNStateMachine */,
+				344840F51BF8555100ADC33B /* VNStateMachineTests */,
+				344840E81BF8555100ADC33B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344840E81BF8555100ADC33B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344840E71BF8555100ADC33B /* VNStateMachine.framework */,
+				344840F11BF8555100ADC33B /* VNStateMachineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344840E91BF8555100ADC33B /* VNStateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				344840EA1BF8555100ADC33B /* VNStateMachine.h */,
+				344841021BF8572D00ADC33B /* VNStateMachine_.h */,
+				344841031BF8574500ADC33B /* VNStateMachine.m */,
+				344841121BF8603600ADC33B /* VNStateMsg.h */,
+				344841131BF8650F00ADC33B /* VNStateMsg.m */,
+				344841051BF859D100ADC33B /* VNState.h */,
+				3448410A1BF859F000ADC33B /* VNStateEntity.h */,
+				344841081BF859E700ADC33B /* VNStateEntity.m */,
+				3448410B1BF85A0800ADC33B /* VNStateEntityManager.h */,
+				3448410C1BF85A1300ADC33B /* VNStateEntityManager.m */,
+				3448410E1BF85A2F00ADC33B /* VNStateMsgDispatcher.h */,
+				3448410F1BF85A3A00ADC33B /* VNStateMsgDispatcher.mm */,
+				344840EC1BF8555100ADC33B /* Info.plist */,
+			);
+			path = VNStateMachine;
+			sourceTree = "<group>";
+		};
+		344840F51BF8555100ADC33B /* VNStateMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				344841261BF9B40300ADC33B /* Person.h */,
+				344841241BF9B3F200ADC33B /* Person.m */,
+				344841291BF9BC4C00ADC33B /* Person_Sleeping.m */,
+				3448412D1BF9BC9F00ADC33B /* Person_Working.m */,
+				344841351BFA083300ADC33B /* Person_Eating.m */,
+				344841371BFA084200ADC33B /* Person_Autonomic.m */,
+				344840F61BF8555100ADC33B /* PersonSyncTests.m */,
+				344841301BF9DF2100ADC33B /* PersonAsyncTests.m */,
+				344840F81BF8555100ADC33B /* Info.plist */,
+			);
+			path = VNStateMachineTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		344840E41BF8555100ADC33B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344840EB1BF8555100ADC33B /* VNStateMachine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		344840E61BF8555100ADC33B /* VNStateMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344840FB1BF8555100ADC33B /* Build configuration list for PBXNativeTarget "VNStateMachine" */;
+			buildPhases = (
+				344840E21BF8555100ADC33B /* Sources */,
+				344840E31BF8555100ADC33B /* Frameworks */,
+				344840E41BF8555100ADC33B /* Headers */,
+				344840E51BF8555100ADC33B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VNStateMachine;
+			productName = VNStateMachine;
+			productReference = 344840E71BF8555100ADC33B /* VNStateMachine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		344840F01BF8555100ADC33B /* VNStateMachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344840FE1BF8555100ADC33B /* Build configuration list for PBXNativeTarget "VNStateMachineTests" */;
+			buildPhases = (
+				344840ED1BF8555100ADC33B /* Sources */,
+				344840EE1BF8555100ADC33B /* Frameworks */,
+				344840EF1BF8555100ADC33B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344840F41BF8555100ADC33B /* PBXTargetDependency */,
+			);
+			name = VNStateMachineTests;
+			productName = VNStateMachineTests;
+			productReference = 344840F11BF8555100ADC33B /* VNStateMachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344840DE1BF8555100ADC33B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = netmaid;
+				TargetAttributes = {
+					344840E61BF8555100ADC33B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					344840F01BF8555100ADC33B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 344840E11BF8555100ADC33B /* Build configuration list for PBXProject "VNStateMachine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 344840DD1BF8555100ADC33B;
+			productRefGroup = 344840E81BF8555100ADC33B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344840E61BF8555100ADC33B /* VNStateMachine */,
+				344840F01BF8555100ADC33B /* VNStateMachineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344840E51BF8555100ADC33B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344840EF1BF8555100ADC33B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344840E21BF8555100ADC33B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344841091BF859E700ADC33B /* VNStateEntity.m in Sources */,
+				344841041BF8574500ADC33B /* VNStateMachine.m in Sources */,
+				3448410D1BF85A1300ADC33B /* VNStateEntityManager.m in Sources */,
+				344841101BF85A3A00ADC33B /* VNStateMsgDispatcher.mm in Sources */,
+				344841141BF8650F00ADC33B /* VNStateMsg.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344840ED1BF8555100ADC33B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3448412A1BF9BC4C00ADC33B /* Person_Sleeping.m in Sources */,
+				344841361BFA083300ADC33B /* Person_Eating.m in Sources */,
+				344841251BF9B3F200ADC33B /* Person.m in Sources */,
+				3448413A1BFA160D00ADC33B /* PersonAsyncTests.m in Sources */,
+				3448412E1BF9BC9F00ADC33B /* Person_Working.m in Sources */,
+				344840F71BF8555100ADC33B /* PersonSyncTests.m in Sources */,
+				344841381BFA084200ADC33B /* Person_Autonomic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344840F41BF8555100ADC33B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344840E61BF8555100ADC33B /* VNStateMachine */;
+			targetProxy = 344840F31BF8555100ADC33B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		344840F91BF8555100ADC33B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		344840FA1BF8555100ADC33B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		344840FC1BF8555100ADC33B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VNStateMachine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmaid.VNStateMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		344840FD1BF8555100ADC33B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VNStateMachine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmaid.VNStateMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		344840FF1BF8555100ADC33B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = VNStateMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmaid.VNStateMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		344841001BF8555100ADC33B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = VNStateMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmaid.VNStateMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344840E11BF8555100ADC33B /* Build configuration list for PBXProject "VNStateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344840F91BF8555100ADC33B /* Debug */,
+				344840FA1BF8555100ADC33B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344840FB1BF8555100ADC33B /* Build configuration list for PBXNativeTarget "VNStateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344840FC1BF8555100ADC33B /* Debug */,
+				344840FD1BF8555100ADC33B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344840FE1BF8555100ADC33B /* Build configuration list for PBXNativeTarget "VNStateMachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344840FF1BF8555100ADC33B /* Debug */,
+				344841001BF8555100ADC33B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344840DE1BF8555100ADC33B /* Project object */;
+}
