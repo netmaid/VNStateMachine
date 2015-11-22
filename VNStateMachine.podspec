@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VNStateMachine"
-  s.version          = "0.1.1-beta2"
+  s.version          = "0.1.2"
   s.summary          = "An Object-based State Machine for Objective-C."
   s.description      = <<-DESC
                          The object-based state is usable for complicated state machine,
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author           = "Chungmin Ahn"
   s.source           = { :git => "https://github.com/netmaid/VNStateMachine.git", :tag => "v#{s.version}" }
 
-  s.platform     = :ios, '7.1'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'VNStateMachine/**/*.{h,m,mm}'

@@ -2,8 +2,8 @@
 //  PersonAsyncTests.m
 //  VNStateMachine
 //
-//  Created by ened on 2015. 11. 16..
-//  Copyright © 2015년 netmaid. All rights reserved.
+//  Created by netmaid on 2015. 11. 16..
+//  Copyright © 2015 netmaid. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

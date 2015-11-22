@@ -21,7 +21,7 @@ struct StateMsg {
 
 typedef std::multiset<StateMsg>		PriorityQueue;
 
-const int smallest_msg_delay = 33;		// 1000/33 => 30 fps
+const double smallest_msg_delay = 0.000001;  // 1 microseconds
 
 static inline int ABS_INT(int a)
 {
