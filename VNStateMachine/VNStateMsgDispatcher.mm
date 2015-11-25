@@ -23,14 +23,14 @@ typedef std::multiset<StateMsg>		PriorityQueue;
 
 const double smallest_msg_delay = 0.000001;  // 1 microseconds
 
-static inline int ABS_INT(int a)
+static inline double VNABS(int a)
 {
 	return (a < 0 ? -a: a);
 }
 
 static inline bool operator==(const StateMsg& m1, const StateMsg& m2)
 {
-	return	ABS_INT([m1.msg time] - [m2.msg time]) < smallest_msg_delay &&
+	return	VNABS([m1.msg time] - [m2.msg time]) < smallest_msg_delay &&
 		([m1.msg sender] == [m2.msg sender]) &&
 		([m1.msg receiver] == [m2.msg receiver]) &&
 		([m1.msg msg] == [m2.msg msg]);
@@ -41,7 +41,7 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 	if (m1 == m2)
 		return false;
 	else
-		return (int)([m1.msg time] - [m2.msg time]) < 0;
+		return ([m1.msg time] - [m2.msg time]) < 0;
 }
 ///////////////////////////////////////////////////////////////////////////////////////
 
