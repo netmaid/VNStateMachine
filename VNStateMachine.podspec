@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VNStateMachine"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "An Object-based State Machine for Objective-C."
   s.description      = <<-DESC
                          The object-based state is usable for complicated state machine,

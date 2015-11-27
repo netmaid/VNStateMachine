@@ -154,7 +154,7 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 	
 	NSTimeInterval cur = [NSDate timeIntervalSinceReferenceDate];
 	
-	while (!_pq->empty() && (cur - [_pq->begin()->msg time]) < 0) {
+	while (!_pq->empty() && (cur - [_pq->begin()->msg time]) >= 0) {
 		StateMsg state_msg = *_pq->begin();
 		
 		VNStateEntityPtr entity = [self getEntity:state_msg.msg.receiver];
