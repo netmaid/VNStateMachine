@@ -10,14 +10,7 @@
 
 @property (readonly) VNStateID sid;
 
--(void)update;
--(BOOL)handleMsg:(VNStateMsg*)msg;
-
-@end
-
-
-@interface NSObject (VNStateEntityDefaultImplementaion)
-
+@optional
 -(void)update;
 -(BOOL)handleMsg:(VNStateMsg*)msg;
 

@@ -56,7 +56,9 @@
 	NSEnumerator* enumerator = [entityMaps objectEnumerator];
 	VNStateEntityPtr entity;
 	while ((entity = [enumerator nextObject])) {
-		[entity update];
+		if ([entity respondsToSelector:@selector(update)]) {
+			[entity update];
+		}
 	}
 }
 

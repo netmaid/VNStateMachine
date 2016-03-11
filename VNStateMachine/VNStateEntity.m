@@ -9,19 +9,3 @@
 #import <Foundation/Foundation.h>
 #import "VNStateMsg.h"
 #import "VNStateEntity.h"
-
-
-@implementation NSObject (VNStateEntityDefaultImplementaion)
-
--(void)update
-{
-	// Nothing to do
-}
-
--(BOOL)handleMsg:(VNStateMsg*)msg
-{
-	// Nothing to do
-	return NO;
-}
-
-@end

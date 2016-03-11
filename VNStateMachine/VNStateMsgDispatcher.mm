@@ -169,7 +169,9 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 
 -(void)dischargeMsg:(VNStateMsg*)msg forEntity:(VNStateEntityPtr)entity
 {
-	[entity handleMsg:msg];
+	if ([entity respondsToSelector:@selector(handleMsg:)]) {
+		[entity handleMsg:msg];
+	}
 }
 
 @end
