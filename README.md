@@ -1,6 +1,6 @@
 # VNStateMachine
 
-[![CI Status](http://img.shields.io/travis/Chungmin Ahn/VNStateMachine.svg?style=flat)](https://travis-ci.org/Chungmin Ahn/VNStateMachine)
+[![CI Status](http://img.shields.io/travis/netmaid/VNStateMachine.svg?style=flat)](https://travis-ci.org/netmaid/VNStateMachine)
 [![Version](https://img.shields.io/cocoapods/v/VNStateMachine.svg?style=flat)](http://cocoapods.org/pods/VNStateMachine)
 [![License](https://img.shields.io/cocoapods/l/VNStateMachine.svg?style=flat)](http://cocoapods.org/pods/VNStateMachine/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/VNStateMachine.svg?style=flat)](http://cocoapods.org/pods/VNStateMachine)

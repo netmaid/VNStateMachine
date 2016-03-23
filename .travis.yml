@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode7.3
+script:
+  - xctool -project VNStateMachine.xcodeproj -scheme VNStateMachineTests -sdk iphonesimulator build-tests
