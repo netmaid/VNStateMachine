@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VNStateMachine"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "An Object-based State Machine for Objective-C."
   s.description      = <<-DESC
                          The object-based state is usable for complicated state machine,
@@ -18,4 +18,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'VNStateMachine/**/*.{h,m,mm}'
   s.public_header_files = 'VNStateMachine/**/*.h'
+  s.libraries = 'stdc++.6'
 end
