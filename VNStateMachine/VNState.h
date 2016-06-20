@@ -6,6 +6,9 @@
 //  Copyright © 2015 netmaid. All rights reserved.
 //
 
+@class VNStateMsg;
+
+
 @protocol VNState <NSObject>
 
 +(instancetype)state;

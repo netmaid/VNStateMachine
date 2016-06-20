@@ -6,6 +6,9 @@
 //  Copyright © 2015 netmaid. All rights reserved.
 //
 
+@class VNStateMsg;
+
+
 @interface VNStateMachine<__covariant ObjectType>: NSObject
 
 @property (nonatomic,weak,readonly) ObjectType owner;

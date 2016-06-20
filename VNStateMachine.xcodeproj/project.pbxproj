@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3443890C1D18154F001D4816 /* VNStateEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3448410A1BF859F000ADC33B /* VNStateEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3443890D1D181569001D4816 /* VNStateMachine_.h in Headers */ = {isa = PBXBuildFile; fileRef = 344841021BF8572D00ADC33B /* VNStateMachine_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3443890E1D18156E001D4816 /* VNStateMsg.h in Headers */ = {isa = PBXBuildFile; fileRef = 344841121BF8603600ADC33B /* VNStateMsg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3443890F1D181573001D4816 /* VNState.h in Headers */ = {isa = PBXBuildFile; fileRef = 344841051BF859D100ADC33B /* VNState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344389101D18157A001D4816 /* VNStateEntityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3448410B1BF85A0800ADC33B /* VNStateEntityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344389111D18157F001D4816 /* VNStateMsgDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3448410E1BF85A2F00ADC33B /* VNStateMsgDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		344840EB1BF8555100ADC33B /* VNStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 344840EA1BF8555100ADC33B /* VNStateMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		344840F21BF8555100ADC33B /* VNStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344840E71BF8555100ADC33B /* VNStateMachine.framework */; };
 		344840F71BF8555100ADC33B /* PersonSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344840F61BF8555100ADC33B /* PersonSyncTests.m */; };
@@ -140,7 +146,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3443890D1D181569001D4816 /* VNStateMachine_.h in Headers */,
+				3443890F1D181573001D4816 /* VNState.h in Headers */,
 				344840EB1BF8555100ADC33B /* VNStateMachine.h in Headers */,
+				3443890E1D18156E001D4816 /* VNStateMsg.h in Headers */,
+				344389111D18157F001D4816 /* VNStateMsgDispatcher.h in Headers */,
+				3443890C1D18154F001D4816 /* VNStateEntity.h in Headers */,
+				344389101D18157A001D4816 /* VNStateEntityManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

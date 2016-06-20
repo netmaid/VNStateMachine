@@ -6,6 +6,9 @@
 //  Copyright © 2015 netmaid. All rights reserved.
 //
 
+@class VNStateMsg;
+
+
 @interface VNStateMsgDispatcher: VNStateEntityManager
 
 -(instancetype)initWithTimeInterval:(NSTimeInterval)interval withEntityUpdate:(BOOL)update;

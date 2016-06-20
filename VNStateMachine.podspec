@@ -14,9 +14,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/netmaid/VNStateMachine.git", :tag => "v#{s.version}" }
 
   s.platform     = :ios, '6.0'
-  s.requires_arc = true
 
   s.source_files = 'VNStateMachine/**/*.{h,m,mm}'
   s.public_header_files = 'VNStateMachine/**/*.h'
+
+  s.requires_arc = true
   s.libraries = 'stdc++.6'
 end
