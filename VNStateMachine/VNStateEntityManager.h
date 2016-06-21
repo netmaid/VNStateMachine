@@ -6,6 +6,9 @@
 //  Copyright © 2015 netmaid. All rights reserved.
 //
 
+#import "VNStateMsg.h"
+
+
 @interface VNStateEntityManager: NSObject
 
 -(void)clear;
