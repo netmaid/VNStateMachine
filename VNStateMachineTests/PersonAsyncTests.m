@@ -35,6 +35,9 @@
 
 - (void)tearDown {
 	[msgDispatcher unregisterEntity:person];
+	[msgDispatcher endMsgDispatcher];
+	msgDispatcher = nil;
+	person = nil;
 	
     [super tearDown];
 }

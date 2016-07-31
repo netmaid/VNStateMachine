@@ -76,6 +76,14 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 	return self;
 }
 
+-(void)endMsgDispatcher
+{
+	if (_timer) {
+		[_timer invalidate];
+		_timer = nil;
+	}
+}
+
 -(void)dealloc
 {
 	if (_pq) {
