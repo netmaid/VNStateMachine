@@ -43,6 +43,28 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 	else
 		return ([m1.msg time] - [m2.msg time]) < 0;
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+@interface VNStateMachineTimerTarget: NSObject
+@property(weak, nonatomic) id target;
+
+- (void)timerFired:(NSTimer*)timer;
+@end
+
+
+@implementation VNStateMachineTimerTarget
+
+- (void)timerFired:(NSTimer*)timer
+{
+	[self.target performSelector:@selector(timerFired:) withObject:timer];
+}
+
+@end
+
+
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -70,18 +92,13 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 {
 	if (self = [self init])
 	{
-		_timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(onTick:) userInfo:nil repeats:YES];
+		VNStateMachineTimerTarget* timerTarget = [[VNStateMachineTimerTarget alloc] init];
+		timerTarget.target = self;
+		
+		_timer = [NSTimer scheduledTimerWithTimeInterval:interval target:timerTarget selector:@selector(timerFired:) userInfo:nil repeats:YES];
 		entityUpdate = update;
 	}
 	return self;
-}
-
--(void)endMsgDispatcher
-{
-	if (_timer) {
-		[_timer invalidate];
-		_timer = nil;
-	}
 }
 
 -(void)dealloc
@@ -90,9 +107,14 @@ static inline bool operator<(const StateMsg& m1, const StateMsg& m2)
 		delete _pq;
 		_pq = NULL;
 	}
+	
+	if (_timer) {
+		[_timer invalidate];
+		_timer = nil;
+	}
 }
 
--(void)onTick:(NSTimer*)timer
+-(void)timerFired:(NSTimer*)timer
 {
 	[self dispatchDelayedMsgs];
 	

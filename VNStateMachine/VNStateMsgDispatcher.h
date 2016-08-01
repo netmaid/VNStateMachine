@@ -13,9 +13,6 @@
 
 -(instancetype)initWithTimeInterval:(NSTimeInterval)interval withEntityUpdate:(BOOL)update;
 
-// Should be called to dispose dispatcher
--(void)endMsgDispatcher;
-
 -(void)dispatchMsg:(VNStateMsg*)msg delay:(NSTimeInterval)delay;
 -(void)dispatchDelayedMsgs;
 
